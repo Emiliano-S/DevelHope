@@ -16,43 +16,50 @@
 	<body>
 		<form action="#">
 			<label for="inputEmail">La tua email:</label>
-			<input type="email" name="inputEmail" placeholder="youremail@email.com"/>
+			<input type="email" name="email" id="inputEmail" placeholder="youremail@email.com"/>
 
 			<label for="inputPassword">Password:</label>
-			<input type="password" name="inputPassword" placeholder="Your password"/>
+			<input type="password" name="password" id="inputPassword" placeholder="Your password"/>
 
 			<label for="inputName">Nome:</label>
-			<input type="text" name="inputName" placeholder="Your name"/>
+			<input type="text" name="nome" id="inputName" placeholder="Your name"/>
 
 			<label for="inputSurname">Cognome:</label>
-			<input type="text" name="inputSurname" placeholder="Your surname"/>
+			<input type="text" name="cognome" id="inputSurname" placeholder="Your surname"/>
 
 			<label for="inputDate">La tua data di nascita:</label>
-			<input type="date" min="1900-01-01" max="2022-03-24" value="2022-03-2024"/>
+			<input type="date" name="dataN" id="inputDate" min="1900-01-01" max="2022-03-24" value="2022-03-2024"/>
 
 			<label for="inputTel">Il tuo numero ti telefono:</label>
-			<input type="tel" name="inputTel"/>
+			<input type="tel" name="tel" id="inputTel"/>
 
 			<label for="selectAbbonament">Scegli il tuo piano di abbonamento:</label>
-			<select name="selectAbbonament">
+			<select name="abbonaments" id="selectAbbonament">
 				<option>GRATIS</option>
-				<option>€ 9.99/mese</option>
-				<option>€ 11.99/mese</option>
-				<option>€ 24.99/mense</option>
+				<optgroup label="Abbonamenti mensili">
+					<option value="9">€ 9.99/mese</option>
+					<option value="11">€ 11.99/mese</option>
+					<option value="24">€ 24.99/mense</option>
+				</optgroup>
 			</select>
 
 			<label for="selectPro">
-				<input type="checkbox" name="selectPro">Vantaggi PRO per € 5,00/mese.
+				<input type="checkbox" name="pro" id="selectPro">Vantaggi PRO per € 5,00/mese.
 			</label>
 
 			<label for="cardNumber">Numero carta:</label>
-			<input type="number" minlength="0" maxlength="16" placeholder="0000000000000000" />
+			<input type="number" id="cardNumber" name="cN" minlength="0" maxlength="16" placeholder="0000000000000000" />
 
 			<label for="cardCVC">Numero CVC:</label>
-			<input type="number" minlength="0" maxlength="3" placeholder="000"/>
+			<input type="number" id="cardCVC" name="cCVC" minlength="0" maxlength="3" placeholder="000"/>
 
 			<label for="cardDate">Scadenza:</label>
-			<input type="date" min="2000-01-01" max="2030-01-01" />
+			<input type="date" id="cardDate" name="cD" min="2000-01-01" max="2030-01-01"/>
+
+			<label for="inputAddress">Indirizzo di fatturazzione:</label>
+			<input type="text" name="address" id="inputAddress" placeholder="Via Peppino, 8 22100 COMO"/>
+
+			<button type="submit">Registrati!</button>
 		</form>
 	</body>
 
