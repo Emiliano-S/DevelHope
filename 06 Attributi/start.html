@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Lezione HTML</title>
-</head>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Lezione HTML</title>
+    </head>
 
-<body>
-
-</body>
+    <body>
+        <p>
+            <input type="button" value="Bottone" disabled />
+        </p>
+        <p>
+            <label for="inputRange">Label per input range da 0 a 100:</label>
+            <input type="number" name="inputRange" min="0" max="100" step="2" autofocus/>
+        </p>
+        <p>
+            <label for="inputCheck">Label per il seguente ceckbox:</label>
+            <input type="checkbox" checked/>
+        </p>
+        <p>
+            <input type="date" data-today="2022-03-04" min="1900-01-01" max="2023-01-01" value="2022-03-24" />
+        </p>
+    </body>
 
 </html>
