@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Lezione HTML</title>
-	<style>
-		label {
-			display: block
-		}
-	</style>
-</head>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Lezione HTML</title>
+		<style>
+			label {
+				display: block
+			}
+		</style>
+	</head>
 
-<body>
+	<body>
+		<form action="#">
+			<label for="inputEmail">La tua email:</label>
+			<input type="email" name="inputEmail" placeholder="youremail@email.com"/>
 
-</body>
+			<label for="inputPassword">Password:</label>
+			<input type="password" name="inputPassword" placeholder="Your password"/>
+
+			<label for="inputName">Nome:</label>
+			<input type="text" name="inputName" placeholder="Your name"/>
+
+			<label for="inputSurname">Cognome:</label>
+			<input type="text" name="inputSurname" placeholder="Your surname"/>
+
+			<label for="inputDate">La tua data di nascita:</label>
+			<input type="date" min="1900-01-01" max="2022-03-24" value="2022-03-2024"/>
+
+			<label for="inputTel">Il tuo numero ti telefono:</label>
+			<input type="tel" name="inputTel"/>
+
+			<label for="selectAbbonament">Scegli il tuo piano di abbonamento:</label>
+			<select name="selectAbbonament">
+				<option>GRATIS</option>
+				<option>€ 9.99/mese</option>
+				<option>€ 11.99/mese</option>
+				<option>€ 24.99/mense</option>
+			</select>
+
+			<label for="selectPro">
+				<input type="checkbox" name="selectPro">Vantaggi PRO per € 5,00/mese.
+			</label>
+
+			<label for="cardNumber">Numero carta:</label>
+			<input type="number" minlength="0" maxlength="16" placeholder="0000000000000000" />
+
+			<label for="cardCVC">Numero CVC:</label>
+			<input type="number" minlength="0" maxlength="3" placeholder="000"/>
+
+			<label for="cardDate">Scadenza:</label>
+			<input type="date" min="2000-01-01" max="2030-01-01" />
+		</form>
+	</body>
 
 </html>
