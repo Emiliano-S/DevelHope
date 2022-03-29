@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/nav-style.css" rel="stylesheet" />
+        <title>Nintendo Official Site: Consoles, Games, News, and More</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <!--Section top Nav-->
+                <div class="nav-section-top">
+                    <!--Section top left Nav-->
+                    <div class="nav-section-top-left">
+                        <!--Logo top left Nav container-->
+                        <div class="nav-logo-container">
+                            <img src="" alt="Nintendo Logo" />
+                        </div>
+                        <!--Input search top left Nav container-->
+                        <div class="nav-search-container">
+                            <form action="#" id="searchNav">
+                                <input type="search" id="searchNavInput" placeholder="Search games, hardware, news, etc" />
+                                <!-- Input search nav categories -->
+                                <select id="searchNavOptions">
+                                    <option>All categories</option>
+                                    <option>Games</option>
+                                    <option>Hardware</option>
+                                    <option>Merchandise</option>
+                                    <option>News & Events</option>
+                                    <option>Support</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Section top right Nav-->
+                    <div class="nav-section-top-right">
+                        <!-- Menu top right Nav container -->
+                        <div class="nav-top-menu-container">
+                            <ul class="nav-top-menu">
+                                <!--Menu: Support -->
+                                <li>
+                                    <a href="#">
+                                        <div class="menu-icon">
+                                            <img src="" alt="Support" />
+                                        </div>
+                                        Support
+                                    </a>
+                                </li>
+                                <!--Menu: Wish List -->
+                                <li>
+                                    <a href="#">
+                                        <div class="menu-icon">
+                                            <img src="" alt="Wish List" />
+                                        </div>
+                                        Wish List
+                                    </a>
+                                </li>
+                                <!--Menu: Cart -->
+                                <li>
+                                    <a href="#">
+                                        <div class="menu-icon">
+                                            <img src="" alt="Cart" />
+                                        </div>
+                                        Cart
+                                    </a>
+                                </li>
+                                <!--Menu: Login / Sign up -->
+                                <li>
+                                    <a href="#">
+                                        <div class="menu-icon">
+                                            <img src="" alt="Login / Sing up" />
+                                        </div>
+                                        Login / Sign up
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Section bottom Nav-->
+                <div class="nav-section-bottom">
+                    <!-- Menu bottom Nav -->
+                    <div class="nav-bottom-menu-container">
+                        <ul class="nav-bottom-menu">
+                            <!--Menu: My Nintendo Store -->
+                            <li>
+                                <a href="#">
+                                    <div class="menu-icon">
+                                        <img src="" alt="My Nintendo Store" />
+                                    </div>
+                                    My Nintendo Store
+                                    <div class="menu-arrow">
+                                        <img src="" alt="Drop down arrow" />
+                                    </div>
+                                </a>
+                            </li>
+                            <!--Menu: Games -->
+                            <li id="menuGames">
+                                <a href="#">
+                                    <div class="menu-icon">
+                                        <img src="" alt="Games" />
+                                    </div>
+                                    Games
+                                    <div class="menu-arrow">
+                                        <img src="" alt="Drop down arrow" />
+                                    </div>
+                                </a>
+                            </li>
+                            <!--Menu: Nintendo Switch -->
+                            <li id="menuNintendoSwitch">
+                                <a href="#">
+                                    <div class="menu-icon">
+                                        <img src="" alt="Nintendo Switch" />
+                                    </div>
+                                    Nintendo Switch
+                                    <div class="menu-arrow">
+                                        <img src="" alt="Drop down arrow" />
+                                    </div>
+                                </a>
+                            </li>
+                            <!--Menu: News & Events -->
+                            <li>
+                                <a href="#">
+                                    <div class="menu-icon">
+                                        <img src="" alt="News & Events" /> <!--Fallback version PNG Logo-->
+                                    </div>
+                                    News & Events
+                                </a>
+                            </li>
+                            <!--Menu: Play Nintendo -->
+                            <li id="menuPlayNintendo">
+                                <a href="#">
+                                    <div class="menu-icon">
+                                        <img src="" alt="Play Nintendo" /> <!--Fallback version PNG Logo-->
+                                    </div>
+                                    Play Nintendo
+                                    <div class="menu-arrow">
+                                        <img src="" alt="Drop down arrow" /> <!--Fallback version PNG Logo-->
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Section drop down menu-->
+                <div class="dropdown-menu-container">
+                    <!--Drop down menu My Nintendo Store-->
+                    <div class="dropdown-menu" id="dropMyNintendoStore">
+                        <!-- Drop down My Nintendo Store: top -->
+                        <div class="dropdwon-top">
+                            <!-- Drop down menu: title -->
+                            <div class="dropdown-menu-title">
+                                <div class="dopdown-title-icon">
+                                    <img src="" alt="My Nintendo Store" />
+                                </div>
+                                <h3>
+                                    My Nintendo Store
+                                </h3>
+                                <!--Drop down menu: X clouser - with position:absolute-->
+                                <div class="container-close-dropdown">
+                                    <img src="" alt="Close drop down menu" />
+                                </div>
+                                <!-- Drop down menu: Wave -->
+                                <div class="dropdown-wave">
+                                    <!--Wave in background-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Drop down My Nintendo Store: menu -->
+                        <div class="dropdown-menu">
+                            <!-- Drop down menu: Games-->
+                            <div class="dropdown-menu-section">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="menu-icon">
+                                                <img src="" alt="Games" />
+                                            </div>
+                                            Games
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nintendo Switch games</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">New releases</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sales & deals</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Drop down menu: Hardware-->
+                            <div class="dropdown-menu-section">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="menu-icon">
+                                                <img src="" alt="Hardware" />
+                                            </div>
+                                            Hardware
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nintendo Switch systems</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Joy-Con & controllers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cases & more</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Replacement parts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Drop down menu: Merchandise-->
+                            <div class="dropdown-menu-section">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                        <div class="menu-icon">
+                                            <img src="" alt="Merchandise" />
+                                        </div>
+                                        Merchandise
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Apparel & accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home & office</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Plush</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Toys</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Drop down menu: Store exclusives-->
+                            <div class="dropdown-menu-section">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                        <div class="menu-icon">
+                                            <img src="" alt="Store exclusives" />
+                                        </div>
+                                        Store exclusives
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Exclusives products</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Nintendo rewards</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nintendo Switch Online offers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Drop down menu: Characters-->
+                            <div class="dropdown-menu-section">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                        <div class="menu-icon">
+                                            <img src="" alt="Characters" />
+                                        </div>
+                                        Characters
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Animal Crossing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kirby</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Mario</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">The Legend of Zelda</a>
+                                    </li>
+                                </ul>
+                            </div>
+                             <!-- Drop down menu: Sales & deals-->
+                             <div class="dropdown-menu-section">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="menu-icon">
+                                                <img src="" alt="Sales & deals" />
+                                            </div>
+                                            Sales & deals
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Drop down My Nintendo Store: bottom -->
+                        <div class="dropdown-bottom">
+                            <button class="dropdown-button">
+                                Shop all
+                            </button>
+                        </div>
+                    </div>
+                    <!--Drop down menu Games-->
+                    <div class="dropdown-menu" id="dropGames">
+                        <!-- Drop down Games: top -->
+                        <div class="dropdown-top">
+                            <div class="container-close-dropdown">
+                                <img src="" alt="Close drop down menu" />
+                            </div>
+                        </div>
+                        <!-- Drop down Games: menu -->
+                        <div class="dropdown-menu">
+                            <!-- Drop down Games: Nintendo Switch games -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="Nintendo Switch games" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>Nintendo Switch games</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Drop down Games: New releases -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="New releases" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>New releases</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Drop down Games: Coming soon -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="Coming soon" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>Coming soon</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Drop down Games: Shop Games -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="Shop Games" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>Shop Games</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Drop down menu Nintendo Switch-->
+                    <div class="dropdown-menu" id="dropNintendoSwitch">
+                        <!-- Drop down Nintendo Switch: top -->
+                        <div class="dropdown-top">
+                            <div class="container-close-dropdown">
+                                <img src="" alt="Close drop down menu" />
+                            </div>
+                        </div>
+                        <!-- Drop down Nintendo Switch: menu -->
+                        <div class="dropdown-menu">
+                            <!-- Drop down Nintendo Switch: Nintendo Switch lineup -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="Nintendo Switch lineup" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>Nintendo Switch lineup</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Drop down Nintendo Switch: Compare systems -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="Compare systems" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>Compare systems</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Drop down Nintendo Switch: Online service -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="Online service" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>Online service</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Drop down Nintendo Switch: Accessories -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="Accessories" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>Accessories</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Drop down Nintendo Switch: Shop systems -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="Shop systems" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>Shop systems</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Drop down menu Play Nintendo-->
+                    <div class="dropdown-menu" id="dropNintendoSwitch">
+                        <!-- Drop down Play Nintendo: top -->
+                        <div class="dropdown-top">
+                            <div class="container-close-dropdown">
+                                <img src="" alt="Close drop down menu" />
+                            </div>
+                        </div>
+                        <!-- Drop down Play Nintendo: menu -->
+                        <div class="dropdown-menu">
+                            <!-- Drop down Play Nintendo: For kids -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="For kids" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>For kids</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Drop down Play Nintendo: For parents -->
+                            <div class="dropdown-menu-section">
+                                <a href="#">
+                                    <div class="dropdown-section-img">
+                                        <img src="" alt="For parents" />
+                                    </div>
+                                    <div class="dropdown-section-text">
+                                        <span>For parents</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
