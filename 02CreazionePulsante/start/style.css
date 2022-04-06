@@ -32,3 +32,6 @@ body {
 #expand-toggle:checked ~ #expand-btn{
 	background-color: #88ff88;
 }
+#expand-toggle:checked ~ * .expandable{
+	visibility: visible;
+}
