@@ -1,0 +1,29 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "grn grn grn"
+        "yel rd blu"
+        "org org blu";
+}
+
+#yellow > ul, #red > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#green{
+    grid-area: grn;
+}
+#orange{
+    grid-area: org;
+}
+#yellow{
+    grid-area: yel;
+}
+#red{
+    grid-area: rd;
+}
+#blue{
+    grid-area: blu;
+}
