@@ -70,6 +70,18 @@ body{
 .nav-menu a.active{
     color: #fff;
 }
+
+.drop-arrow{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.drop-arrow > img{
+    width: 100%;
+    height: auto;
+    fill: white;
+}
+
 .nav-menu a.disable{
     color: #595C5F;
     cursor: not-allowed;
