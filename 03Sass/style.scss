@@ -1,0 +1,62 @@
+@use "colors" as color;
+@use "pxChanger" as px;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin flx-center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin article($color, $border-color, $font-size){
+    border: px.rem(1) solid $border-color;
+    color: $color;
+    font-size: $font-size;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    @include flx-center(column);
+}
+
+div{
+    @include flx-center(column);
+    border: 1px solid color.$primary-color;
+    margin: px.rem(20);
+    padding: px.rem(20);
+    gap: px.rem(20);
+    h1{
+        color: color.$tertiary-color;
+        border-bottom: px.rem(1) solid color.$secondary-color;
+    }
+    section{
+        article{
+            p{
+                padding: px.rem(30);
+                text-align: center;
+            }
+        }
+    }
+    section:first-of-type{
+        @include flx-center(row);
+        article:nth-child(odd){
+            @include article(color.$secondary-color, color.$tertiary-color, 1rem);
+        }
+        article:nth-child(even){
+            @include article(color.$primary-color, color.$tertiary-color, 1rem);
+        }
+    }
+    section:last-of-type{
+        width: 100%;
+        article{
+            @include article(color.$tertiary-color, color.$secondary-color, px.rem(24));
+        }
+    }
+}
