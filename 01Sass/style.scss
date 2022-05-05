@@ -1,1 +1,57 @@
+$primary-color: red;
+$secondary-color: blue;
+$tertiary-color: green;
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin fxR-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fxC-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    @include fxC-center;
+}
+
+div{
+    @include fxC-center;
+    border: 1px solid $primary-color;
+    margin: 20px;
+    padding: 20px;
+    h1{
+        color: $tertiary-color;
+        border-bottom: 1px solid $secondary-color;
+    }
+    section{
+        @include fxR-center;
+        margin-top: 20px;
+        article{
+            border: 1px solid $tertiary-color;
+            &:nth-child(odd) > p{
+                color: $secondary-color;
+            }
+            &:nth-child(even) > p{
+                color: $primary-color;
+            }
+            p{
+                padding: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
