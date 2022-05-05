@@ -8,28 +8,22 @@ $tertiary-color: green;
     box-sizing: border-box;
 }
 
-@mixin fxR-center {
+@mixin flx-center($direction) {
     display: flex;
-    flex-direction: row;
+    flex-direction: $direction;
     justify-content: center;
     align-items: center;
 }
 
-@mixin fxC-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 body{
     width: 100vw;
     height: 100vh;
-    @include fxC-center;
+    @include flx-center(column);
 }
 
 div{
-    @include fxC-center;
+    @include flx-center(column);
     border: 1px solid $primary-color;
     margin: 20px;
     padding: 20px;
@@ -38,7 +32,7 @@ div{
         border-bottom: 1px solid $secondary-color;
     }
     section{
-        @include fxR-center;
+        @include flx-center(row);
         margin-top: 20px;
         article{
             border: 1px solid $tertiary-color;
